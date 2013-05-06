@@ -1,0 +1,85 @@
+﻿@model WeddingOrganizer.Web.Models.Guest
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Guest</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.NumberofPeople)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.NumberofPeople)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Address)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Address)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Address2)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Address2)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.City)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.City)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.State)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.State)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Zip)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Zip)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.HomePhone)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.HomePhone)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CellPhone)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CellPhone)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.RSVPRecieved)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.RSVPRecieved)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.GuestID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

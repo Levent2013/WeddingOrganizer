@@ -8,6 +8,15 @@ namespace WeddingOrganizer.Web
         // For more information on Bundling, visit http://go.microsoft.com/fwlink/?LinkId=254725
         public static void RegisterBundles(BundleCollection bundles)
         {
+
+            bundles.Add(new ScriptBundle("~/bundles/WeddingScripts").Include(
+                "~/Scripts/jquery-{version}.js",
+                "~/Scripts/jquery-ui-{version}.js",
+                "~/Scripts/jquery.unobtrusive*",
+                "~/Scripts/jquery.validate*",
+                "~/Scripts/DataTables/jquery.dataTables.min.js"
+                ));
+
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                         "~/Scripts/jquery-{version}.js"));
 
@@ -22,6 +31,11 @@ namespace WeddingOrganizer.Web
             // ready for production, use the build tool at http://modernizr.com to pick only the tests you need.
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                         "~/Scripts/modernizr-*"));
+
+            bundles.Add(new StyleBundle("~/Content/WeddingCss").Include(
+                "~/Content/site.css",
+                "~/Content/demo_table.css"
+                ));
 
             bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/site.css"));
 

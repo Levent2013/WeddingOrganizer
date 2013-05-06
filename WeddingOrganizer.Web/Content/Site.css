@@ -4,6 +4,11 @@
     padding: 0;
 }
 
+.actionLinkUI {
+     float: left; 
+     margin-right: 2px;
+}
+
 body {
     background-color: #fff;
     border-top: solid 10px #000;
