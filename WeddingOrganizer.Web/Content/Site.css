@@ -1,7 +1,17 @@
 ﻿html {
-    background-color: #e2e2e2;
+    /*background-color: #e2e2e2;*/
+        background-image: url('../Images/love wallpaper mobile.jpg');
+    background-repeat: repeat;
+
     margin: 0;
     padding: 0;
+}
+
+#brand{
+    background: url('../Images/twohearts.jpg');
+    background-repeat: no-repeat;
+    height: 57px;
+    width: 100px;
 }
 
 .actionLinkUI {
@@ -10,13 +20,15 @@
 }
 
 body {
-    background-color: #fff;
+    /*background-color: #fff;*/
     border-top: solid 10px #000;
     color: #333;
     font-size: .85em;
-    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    font-family: "Segoe UI" , Verdana, Helvetica, Sans-Serif;
     margin: 0;
     padding: 0;
+    background-image: url('../Images/love wallpaper mobile.jpg');
+    background-repeat: repeat;
 }
 
 a {
@@ -104,7 +116,10 @@ h5, h6 {
 }
 
 #body {
-    background-color: #efeeef;
+        background-image: url('../Images/love wallpaper mobile.jpg');
+    background-repeat: repeat;
+
+    /*background-color: #efeeef;*/
     clear: both;
     padding-bottom: 35px;
 }

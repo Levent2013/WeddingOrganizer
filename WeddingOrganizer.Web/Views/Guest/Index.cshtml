@@ -12,7 +12,9 @@
         $(document).ready(function () {
             $("#tblGuests").dataTable({
                 "bPaginate": true,
-                sPaginationType: "full_numbers"
+                sPaginationType: "full_numbers",
+                iDisplayLength: 15,
+                "bLengthChange": false
             });
         });
     </script>
