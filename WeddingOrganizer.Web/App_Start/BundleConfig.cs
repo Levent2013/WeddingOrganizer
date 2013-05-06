@@ -14,7 +14,8 @@ namespace WeddingOrganizer.Web
                 "~/Scripts/jquery-ui-{version}.js",
                 "~/Scripts/jquery.unobtrusive*",
                 "~/Scripts/jquery.validate*",
-                "~/Scripts/DataTables/jquery.dataTables.min.js"
+                "~/Scripts/DataTables/jquery.dataTables.min.js",
+                "~/Scripts/bootstrap.min.js"
                 ));
 
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
@@ -34,7 +35,9 @@ namespace WeddingOrganizer.Web
 
             bundles.Add(new StyleBundle("~/Content/WeddingCss").Include(
                 "~/Content/site.css",
-                "~/Content/demo_table.css"
+                "~/Content/demo_table.css",
+                "~/Content/bootstrap.css",
+                "~/Content/font-awesome.css"
                 ));
 
             bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/site.css"));

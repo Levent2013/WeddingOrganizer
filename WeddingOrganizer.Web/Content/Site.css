@@ -7,11 +7,28 @@
     padding: 0;
 }
 
-#brand{
-    background: url('../Images/twohearts.jpg');
+.btn a {
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #0000FF;
+    border: medium solid #FF00FF;
+}
+
+#tblGuests {
+    color: #000000;
+}
+
+#tblGuests th {
+    background-color: azure;
+}
+
+#brand {
     background-repeat: no-repeat;
+    display: block;
     height: 57px;
     width: 100px;
+    background-image: url('../Images/twohearts.jpg');
+    text-indent: -9999px;
 }
 
 .actionLinkUI {
@@ -116,12 +133,11 @@ h5, h6 {
 }
 
 #body {
-        background-image: url('../Images/love wallpaper mobile.jpg');
-    background-repeat: repeat;
-
-    /*background-color: #efeeef;*/
+    background-image: url('../Images/love wallpaper mobile.jpg');
+    background-repeat: repeat; /*background-color: #efeeef;*/
     clear: both;
     padding-bottom: 35px;
+    color: #FFFFFF;
 }
 
     .main-content {

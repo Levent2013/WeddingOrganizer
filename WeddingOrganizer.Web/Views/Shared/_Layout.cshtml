@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@using WeddingOrganizer.Web.HtmlHelpers
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -13,7 +14,7 @@
     <header>
         <div class="content-wrapper">
             <div class="float-left">
-                <a id="brand" href="#"></a>
+                @Html.ActionImage("../twohearts.png", "Site Logo", "siteLogo", "Index", "Home", null)
             </div>
             <div class="float-right">
                 <section id="login">
