@@ -19,10 +19,45 @@
             });
         });
     </script>
+    
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('@Url.Action("Edit")').click(function() {
+                InitializeDialog($("#EditDialog"));
+
+                $("#EditDialog").dialog("open");
+            });
+
+            // Method to Initialize the Dialog Box
+
+            function InitializeDialog($element) {
+                $element.dialog({
+                    autoOpen: false,
+                    width: 400,
+                    resizable: false,
+                    draggable: false,
+                    title: "Guest Operations",
+                    modal: true,
+                    show: 'slide',
+                    closeText: 'x',
+                    closeOnEscape: true,
+                    open: function(event, ui) {
+                        //Load the View here using controller and action
+                        $element.load('../Guest/Edit');
+                    },
+
+                    close: function() {
+                        $(this).dialog('close');
+                    }
+                });
+            }
+        });
+
+    </script>
 }
 
 <h2>Wedding Guest List</h2>
-
+<div id="EditDialog" title="Edit Guest" style="display: none;"></div>
 <p>
     @Html.
 </p>
